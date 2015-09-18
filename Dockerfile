@@ -1,9 +1,10 @@
 FROM mono:4.0.1
 
-ENV DNX_BETA8_BUILD=15618
+ENV DNX_BETA8_BUILD=15620
 ENV DNX_VERSION 1.0.0-beta8-$DNX_BETA8_BUILD
 ENV BRANCH_DNX_VERSION 1.0.0-beta7
 ENV DNX_USER_HOME /opt/dnx
+ENV DNX_UNSTABLE_FEED="https://www.myget.org/F/aspnetlitedev/api/v2"
 
 RUN apt-get -qq update && apt-get -qqy install unzip
 
