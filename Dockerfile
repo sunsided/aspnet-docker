@@ -9,7 +9,8 @@ RUN apt-get -qq update && apt-get -qqy install unzip
 
 RUN curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_USER_HOME=$DNX_USER_HOME DNX_BRANCH=v$BRANCH_DNX_VERSION sh
 RUN bash -c "source $DNX_USER_HOME/dnvm/dnvm.sh \
-	&& dnvm install -u $DNX_VERSION -p"
+	&& dnvm install -u $DNX_VERSION -p \
+        && dnvm alias default | xargs -i ln -s $DNX_USER_HOME/runtimes/{} $DNX_USER_HOME/runtimes/default"
 
 # Install libuv for Kestrel from source code (binary is not in wheezy and one in jessie is still too old)
 RUN apt-get -qqy install \
