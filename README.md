@@ -1,5 +1,4 @@
-ASP.NET 5 1.0.0-beta8 nightly-ish Preview Docker Image
-====================
+# ASP.NET 5 1.0.0-rc1 nightly-ish Preview Docker Image
 
 This repository contains `Dockerfile` definitions for [ASP.NET 5][aspnet/home] Docker images and is a loose fork of the [ASP.NET 5 Preview Docker Image](https://github.com/aspnet/aspnet-docker) project.
 
