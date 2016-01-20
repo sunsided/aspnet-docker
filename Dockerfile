@@ -1,6 +1,6 @@
-FROM sunside/mono:4.3.0.2050
+FROM sunside/mono:4.3.3.97
 
-ENV DNX_VERSION 1.0.0-rc2-16177
+ENV DNX_VERSION 1.0.0-rc2-16357
 ENV DNX_USER_HOME /opt/dnx
 
 # Hack from aspnet-docker
