@@ -1,7 +1,8 @@
-FROM sunside/mono:4.3.3.97
+FROM sunside/mono:4.3.3.744
 
-ENV DNX_VERSION 1.0.0-rc2-16357
+ENV DNX_VERSION 1.0.0-rc2-16496
 ENV DNX_USER_HOME /opt/dnx
+ENV DNX_UNSTABLE_FEED=https://www.myget.org/F/aspnetcidev/api/v2/
 
 # Hack from aspnet-docker
 ENV DNX_RUNTIME_ID ubuntu.14.04-x64
