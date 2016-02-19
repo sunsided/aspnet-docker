@@ -1,4 +1,4 @@
-FROM sunside/mono:4.3.3.744
+FROM sunside/mono:4.3.3.97
 
 ENV DNX_VERSION 1.0.0-rc2-16496
 ENV DNX_USER_HOME /opt/dnx
