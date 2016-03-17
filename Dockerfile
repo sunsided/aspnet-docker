@@ -1,6 +1,6 @@
 FROM sunside/mono:4.3.3.97
 
-ENV DNX_VERSION 1.0.0-rc2-16551
+ENV DNX_VERSION 1.0.0-rc2-16595
 ENV DNX_USER_HOME /opt/dnx
 ENV DNX_UNSTABLE_FEED=https://www.myget.org/F/aspnetcidev/api/v2/
 
