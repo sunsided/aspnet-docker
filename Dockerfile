@@ -1,11 +1,11 @@
 FROM sunside/mono:4.3.3.97
 
-ENV DNX_VERSION 1.0.0-rc2-20221
+ENV DNX_VERSION 1.0.0-rc2-20222
 ENV DNX_USER_HOME /opt/dnx
 ENV DNX_UNSTABLE_FEED=https://www.myget.org/F/aspnetcidev/api/v2/
 
 # Hack from aspnet-docker
-ENV DNX_RUNTIME_ID ubuntu.14.04-x64
+ENV DNX_RUNTIME_ID debian.8.2-x64
 
 RUN apt-get -qq update && apt-get -qqy install unzip libc6-dev libicu-dev && rm -rf /var/lib/apt/lists/*
 
